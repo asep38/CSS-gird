@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- header -->
+        <header class="header">
+            <div class="hero">
+                <h2 class="heading">Ramiya Handycraft</h2>
+                <p class="subheading">Home & Living</p>
+            </div>
+            <div class="features feature-1">
+                <h4 class="price">IDR. 200K</h4>
+                <p class="item">Sling Bag</p>
+            </div>
+            <div class="features feature-2">
+                <h4 class="price">IDR. 250K</h4>
+                <p class="item">Tote Bag</p>
+            </div>
+        </header>
+        <!-- navbar -->
+        <nav class="menu">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="brand">
+                <h1>Ramiya </h1>
+            </div>
+            <ul class="menu-list">
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Gallery</a></li>
+            </ul>
+        </nav>
+        <!-- kategori -->
+
+        <!-- service -->
+
+        <section class="services">
+
+            <div class="service">
+                <div class="icon"><i class="uil uil-airplay"></i></div>
+                <h1>Tutorial</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum enim </p>
+            </div>
+            <div class="service">
+                <div class="icon"><i class="uil uil-book-open"></i></i></div>
+                <h1>E-Book</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum enim </p>
+            </div>
+            <div class="service">
+                <div class="icon"><i class="uil uil-graduation-cap"></i></i></div>
+                <h1>Kursus</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum enim </p>
+            </div>
+            <div class="service">
+                <div class="icon"><i class="uil uil-shopping-bag"></i></i></div>
+                <h1>Merch</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum enim </p>
+            </div>
+        </section>
+
+        <!-- gallery -->
+        <section class="gallery">
+            <h2>Gallery</h2>
+            <img src="https://source.unsplash.com/random/201x201" alt="">
+            <img src="https://source.unsplash.com/random/202x202" alt="">
+            <img src="https://source.unsplash.com/random/203x203" alt="">
+            <img src="https://source.unsplash.com/random/204x204" alt="">
+            <img src="https://source.unsplash.com/random/205x205" alt="">
+            <img src="https://source.unsplash.com/random/206x206" alt="">
+            <img src="https://source.unsplash.com/random/207x207" alt="">
+            <img src="https://source.unsplash.com/random/208x208" alt="">
+            <img src="https://source.unsplash.com/random/209x209" alt="">
+            <img src="https://source.unsplash.com/random/2010x2010" alt="">
+        </section>
+
+    </div>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const menulist = document.querySelector("nav ul");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            menulist.classList.toggle("side");
+        });
+    </script>
+</body>
+
+</html>
